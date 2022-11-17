@@ -1,0 +1,25 @@
+{
+    "news":[
+        {
+            "id":1,
+            "title":"Noticia 1",
+            "description": "Esta es mi noticias bebes",
+            "date": "2022-11-17",
+            "imageUrl": "https://parchetek.com/storage/2022/11/imagen-principal.png"
+        },
+        {
+            "id":2,
+            "title":"Noticia 2",
+            "description": "Esta es mi noticias bebes",
+            "date": "2022-11-17",
+            "imageUrl": "https://www.elcolombiano.com/binrepository/640x427/0c0/967d608/none/11101/YRIC/gescuela-de-programacion-codigo-c13-20_41048646_20221112145254.jpg"
+        },
+        {
+            "id":3,
+            "title":"Noticia 3",
+            "description": "Esta es mi noticias bebes",
+            "date": "2022-11-17",
+            "imageUrl": "https://www.elcolombiano.com/binrepository/802x565/0c0/780d565/none/11101/WEDQ/mjovenes-codigo-c13-2-jpg_39776409_20220407203431.jpg"
+        }
+    ]
+}
