@@ -20,11 +20,30 @@ const Form = () => {
       date: date,
       athor: author,
     };
-    const response = await axios.post("http://localhost:8000/news", {
-      method: "POST",
-      data: JSON.stringify(dataNew),
-    });
-    console.log(response)
+
+    // const response = await axios.post("http://localhost:8000/news", {
+    //   method: "POST",
+    //   data: JSON.stringify(dataNew),
+    // });
+    // console.log(response)
+
+    let headersList = {
+      Accept: "*/*",
+      "User-Agent": "Thunder Client (https://www.thunderclient.com",
+      "Conten-Type": "application/json",
+    };
+
+    let bodyContent = JSON.stringify(dataNew);
+
+    let reqOptions = {
+        url:"http://localhost:8000/news",
+        method:"POST",
+        headers: headersList,
+        data: bodyContent, 
+    }
+
+    let response = await axios.request(reqOptions);
+    console.log(response.data)
   };
   return (
     <form onSubmit={sendNew}>
